@@ -3,7 +3,7 @@
 include_once 'ReadAPI.php';
 
 
-$url = (isset($_GET['url'])) ? $_GET['url'] : 'http://localhost/wordpress/tainacan/wp-json/tainacan/v1';
+$url = (isset($_GET['url'])) ? $_GET['url'] : 'http://dev.medialab.ufg.br/ibram/wp-json/tainacan/v1';
 $class = new ReadAPI($url);
 $collections = $class->readCollectionsPublished();
 $dir = dirname(__FILE__).'/files/';
